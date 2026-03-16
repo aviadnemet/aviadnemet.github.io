@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aviad Nemet — Independent Android Developer. Creator of אנגלית לפסיכומטרי (English for the Psychometric Exam).">
+    <title>Aviad Nemet — Android Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1a1a1a;
+            background: #ffffff;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 80px 24px 48px;
+        }
+
+        header {
+            margin-bottom: 56px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .app-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 48px;
+        }
+
+        .app-card .app-name-he {
+            font-size: 1.5rem;
+            font-weight: 600;
+            direction: rtl;
+            unicode-bidi: isolate;
+            margin-bottom: 4px;
+        }
+
+        .app-card .app-name-en {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .app-card .app-description {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 24px;
+        }
+
+        .play-badge img {
+            height: 52px;
+            width: auto;
+        }
+
+        .play-badge img:hover {
+            opacity: 0.85;
+        }
+
+        .contact {
+            margin-bottom: 48px;
+        }
+
+        .contact h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .contact a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding-top: 24px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: #555;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 48px 20px 32px;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            .app-card {
+                padding: 24px;
+            }
+
+            .app-card .app-name-he {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aviad Nemet</h1>
+            <p>Independent Android Developer</p>
+        </header>
+
+        <section class="app-card">
+            <div class="app-name-he">אנגלית לפסיכומטרי</div>
+            <div class="app-name-en">English for the Psychometric Exam</div>
+            <p class="app-description">
+                A Hebrew vocabulary quiz app for students preparing for the Israeli Psychometric exam.
+                Practice English-Hebrew word pairs with smart flashcards, spaced repetition, and progress tracking.
+            </p>
+            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nemet.trivia" target="_blank" rel="noopener">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+            </a>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p><a href="mailto:aviadnemet@gmail.com">aviadnemet@gmail.com</a></p>
+        </section>
+
+        <footer>
+            <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
