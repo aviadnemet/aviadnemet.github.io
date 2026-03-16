@@ -3,8 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aviad Nemet — Independent Android Developer. Creator of אנגלית לפסיכומטרי (English for the Psychometric Exam).">
-    <title>Aviad Nemet — Android Developer</title>
+    <meta name="description" content="Aviad Nemet — Independent Android developer and creator of educational apps. Official developer website and home of English for the Psychometric Exam.">
+    <meta name="author" content="Aviad Nemet">
+    <link rel="canonical" href="https://aviadnemet.github.io/">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Aviad Nemet — Independent Android Developer">
+    <meta property="og:description" content="Independent Android developer building educational tools. Creator of English for the Psychometric Exam.">
+    <meta property="og:url" content="https://aviadnemet.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Aviad Nemet">
+    <title>Aviad Nemet — Independent Android Developer</title>
+
+    <!-- Structured Data: Person -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aviad Nemet",
+        "url": "https://aviadnemet.github.io",
+        "jobTitle": "Independent Android Developer",
+        "description": "Independent Android developer building educational and practical digital tools.",
+        "sameAs": [
+            "https://github.com/aviadnemet",
+            "https://play.google.com/store/apps/details?id=com.nemet.trivia"
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: App -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "English for the Psychometric Exam",
+        "alternateName": "אנגלית לפסיכומטרי",
+        "operatingSystem": "Android",
+        "applicationCategory": "EducationalApplication",
+        "description": "A vocabulary training app for students preparing for the English section of the Israeli Psychometric exam, featuring spaced repetition, flashcards, and progress tracking.",
+        "url": "https://play.google.com/store/apps/details?id=com.nemet.trivia",
+        "author": {
+            "@type": "Person",
+            "name": "Aviad Nemet",
+            "url": "https://aviadnemet.github.io"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -26,8 +75,9 @@
             padding: 80px 24px 48px;
         }
 
+        /* Header */
         header {
-            margin-bottom: 56px;
+            margin-bottom: 48px;
         }
 
         header h1 {
@@ -42,11 +92,29 @@
             color: #555;
         }
 
+        /* Sections */
+        section {
+            margin-bottom: 48px;
+        }
+
+        section h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        /* About */
+        .about p {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        /* App card */
         .app-card {
             border: 1px solid #e0e0e0;
             border-radius: 12px;
             padding: 32px;
-            margin-bottom: 48px;
         }
 
         .app-card .app-name-he {
@@ -60,13 +128,38 @@
         .app-card .app-name-en {
             font-size: 1rem;
             color: #555;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .app-card .app-description {
             font-size: 0.95rem;
             color: #333;
-            margin-bottom: 24px;
+            margin-bottom: 16px;
+        }
+
+        .app-card .app-features {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .app-card .app-features li {
+            font-size: 0.9rem;
+            color: #444;
+            padding: 3px 0;
+        }
+
+        .app-card .app-features li::before {
+            content: "·";
+            font-weight: 700;
+            margin-right: 8px;
+            color: #1a73e8;
+        }
+
+        .app-card .app-motivation {
+            font-size: 0.88rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
         }
 
         .play-badge img {
@@ -78,14 +171,27 @@
             opacity: 0.85;
         }
 
-        .contact {
-            margin-bottom: 48px;
+        /* Links section */
+        .links-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 28px;
         }
 
-        .contact h2 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 8px;
+        .links-list a {
+            color: #1a73e8;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact */
+        .contact p {
+            font-size: 0.95rem;
         }
 
         .contact a {
@@ -97,11 +203,16 @@
             text-decoration: underline;
         }
 
+        /* Footer */
         footer {
             padding-top: 24px;
             border-top: 1px solid #e0e0e0;
             font-size: 0.85rem;
             color: #888;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         footer a {
@@ -114,6 +225,7 @@
             color: #555;
         }
 
+        /* Mobile */
         @media (max-width: 480px) {
             .container {
                 padding: 48px 20px 32px;
@@ -130,6 +242,11 @@
             .app-card .app-name-he {
                 font-size: 1.3rem;
             }
+
+            .links-list {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
     </style>
 </head>
@@ -137,28 +254,72 @@
     <div class="container">
         <header>
             <h1>Aviad Nemet</h1>
-            <p>Independent Android Developer</p>
+            <p>Independent Android Developer &amp; Educational Tool Builder</p>
         </header>
 
-        <section class="app-card">
-            <div class="app-name-he">אנגלית לפסיכומטרי</div>
-            <div class="app-name-en">English for the Psychometric Exam</div>
-            <p class="app-description">
-                A Hebrew vocabulary quiz app for students preparing for the Israeli Psychometric exam.
-                Practice English-Hebrew word pairs with smart flashcards, spaced repetition, and progress tracking.
-            </p>
-            <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nemet.trivia" target="_blank" rel="noopener">
-                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
-            </a>
-        </section>
+        <main>
+            <!-- About -->
+            <section class="about">
+                <h2>About</h2>
+                <p>
+                    I'm an independent Android developer focused on building educational and practical digital tools.
+                    My work combines software development with a strong interest in effective learning methods — designing
+                    apps that help students study smarter using techniques like spaced repetition and active recall.
+                </p>
+                <p>
+                    I'm also a medical student with an academic background in research, which shapes how I approach
+                    problem-solving and product design.
+                </p>
+            </section>
 
-        <section class="contact">
-            <h2>Contact</h2>
-            <p><a href="mailto:aviadnemet@gmail.com">aviadnemet@gmail.com</a></p>
-        </section>
+            <!-- App -->
+            <section>
+                <h2>App</h2>
+                <div class="app-card">
+                    <div class="app-name-he">אנגלית לפסיכומטרי</div>
+                    <div class="app-name-en">English for the Psychometric Exam</div>
+                    <p class="app-description">
+                        A vocabulary training app for Israeli students preparing for the English section of the
+                        Psychometric exam. Practice English–Hebrew word pairs and build lasting knowledge through
+                        evidence-based study methods.
+                    </p>
+                    <ul class="app-features">
+                        <li>Vocabulary training with English–Hebrew word pairs</li>
+                        <li>Spaced repetition for long-term retention</li>
+                        <li>Smart flashcards</li>
+                        <li>Progress tracking</li>
+                        <li>Quiz-based and gamified learning</li>
+                    </ul>
+                    <p class="app-motivation">
+                        Built to give students a focused, no-nonsense tool for the vocabulary section of the exam.
+                    </p>
+                    <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nemet.trivia" target="_blank" rel="noopener">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </section>
+
+            <!-- Links -->
+            <section>
+                <h2>Links</h2>
+                <ul class="links-list">
+                    <li><a href="https://github.com/aviadnemet" target="_blank" rel="noopener">GitHub</a></li>
+                    <!-- TODO: Add LinkedIn URL when ready -->
+                    <!-- <li><a href="https://www.linkedin.com/in/PLACEHOLDER" target="_blank" rel="noopener">LinkedIn</a></li> -->
+                    <li><a href="https://play.google.com/store/apps/details?id=com.nemet.trivia" target="_blank" rel="noopener">Google Play</a></li>
+                </ul>
+            </section>
+
+            <!-- Contact -->
+            <section class="contact">
+                <h2>Contact</h2>
+                <p><a href="mailto:aviadnemet&#64;gmail&#46;com">aviadnemet<span style="display:none">REMOVE</span>&#64;gmail.com</a></p>
+            </section>
+        </main>
 
         <footer>
-            <p><a href="privacy-policy.html">Privacy Policy</a></p>
+            <span>&copy; 2025 Aviad Nemet</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
         </footer>
     </div>
 </body>
