@@ -70,100 +70,91 @@
         }
 
         .container {
-            max-width: 640px;
+            max-width: 600px;
             margin: 0 auto;
-            padding: 80px 24px 48px;
+            padding: 64px 24px 40px;
         }
 
         /* Header */
         header {
-            margin-bottom: 48px;
+            margin-bottom: 32px;
         }
 
         header h1 {
-            font-size: 2rem;
+            font-size: 1.85rem;
             font-weight: 700;
             letter-spacing: -0.02em;
             margin-bottom: 4px;
         }
 
-        header p {
-            font-size: 1.1rem;
-            color: #555;
+        header .subtitle {
+            font-size: 1rem;
+            color: #666;
         }
 
         /* Sections */
-        section {
-            margin-bottom: 48px;
-        }
-
         section h2 {
-            font-size: 1.2rem;
+            font-size: 0.8rem;
             font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #999;
             margin-bottom: 12px;
         }
 
-        /* About */
-        .about p {
-            font-size: 0.95rem;
-            color: #333;
-            margin-bottom: 8px;
+        /* App card */
+        .app-section {
+            margin-bottom: 36px;
         }
 
-        /* App card */
         .app-card {
             border: 1px solid #e0e0e0;
-            border-radius: 12px;
-            padding: 32px;
+            border-radius: 10px;
+            padding: 24px;
         }
 
         .app-card .app-name-he {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 600;
             direction: rtl;
             unicode-bidi: isolate;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
 
         .app-card .app-name-en {
-            font-size: 1rem;
-            color: #555;
-            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 14px;
         }
 
         .app-card .app-description {
-            font-size: 0.95rem;
-            color: #333;
-            margin-bottom: 16px;
+            font-size: 0.9rem;
+            color: #444;
+            margin-bottom: 14px;
         }
 
         .app-card .app-features {
             list-style: none;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
+            columns: 2;
+            column-gap: 16px;
         }
 
         .app-card .app-features li {
-            font-size: 0.9rem;
-            color: #444;
-            padding: 3px 0;
+            font-size: 0.82rem;
+            color: #555;
+            padding: 2px 0;
         }
 
         .app-card .app-features li::before {
             content: "·";
             font-weight: 700;
-            margin-right: 8px;
+            margin-right: 6px;
             color: #1a73e8;
         }
 
-        .app-card .app-motivation {
-            font-size: 0.88rem;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
         .play-badge img {
-            height: 52px;
+            height: 44px;
             width: auto;
         }
 
@@ -171,81 +162,80 @@
             opacity: 0.85;
         }
 
-        /* Links section */
-        .links-list {
-            list-style: none;
+        /* Bottom bar: links + contact merged */
+        .bottom-bar {
+            margin-bottom: 32px;
             display: flex;
             flex-wrap: wrap;
-            gap: 16px 28px;
+            align-items: baseline;
+            gap: 6px 20px;
+            font-size: 0.9rem;
         }
 
-        .links-list a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-
-        .links-list a:hover {
-            text-decoration: underline;
-        }
-
-        /* Contact */
-        .contact p {
-            font-size: 0.95rem;
-        }
-
-        .contact a {
+        .bottom-bar a {
             color: #1a73e8;
             text-decoration: none;
         }
 
-        .contact a:hover {
+        .bottom-bar a:hover {
             text-decoration: underline;
+        }
+
+        .bottom-bar .sep {
+            color: #ccc;
+            user-select: none;
         }
 
         /* Footer */
         footer {
-            padding-top: 24px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 0.85rem;
-            color: #888;
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            font-size: 0.8rem;
+            color: #aaa;
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 8px;
+            align-items: center;
         }
 
         footer a {
-            color: #888;
+            color: #aaa;
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
-            color: #555;
+            color: #666;
         }
 
         /* Mobile */
         @media (max-width: 480px) {
             .container {
-                padding: 48px 20px 32px;
+                padding: 44px 20px 32px;
             }
 
             header h1 {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
             }
 
             .app-card {
-                padding: 24px;
+                padding: 20px;
             }
 
             .app-card .app-name-he {
-                font-size: 1.3rem;
+                font-size: 1.15rem;
             }
 
-            .links-list {
+            .app-card .app-features {
+                columns: 1;
+            }
+
+            .bottom-bar {
                 flex-direction: column;
-                gap: 10px;
+                gap: 6px;
+            }
+
+            .bottom-bar .sep {
+                display: none;
             }
         }
     </style>
@@ -254,67 +244,37 @@
     <div class="container">
         <header>
             <h1>Aviad Nemet</h1>
-            <p>Independent Android Developer &amp; Educational Tool Builder</p>
+            <p class="subtitle">Android Developer · Medical Student</p>
         </header>
 
         <main>
-            <!-- About -->
-            <section class="about">
-                <h2>About</h2>
-                <p>
-                    I'm an independent Android developer focused on building educational and practical digital tools.
-                    My work combines software development with a strong interest in effective learning methods — designing
-                    apps that help students study smarter using techniques like spaced repetition and active recall.
-                </p>
-                <p>
-                    I'm also a medical student with an academic background in research, which shapes how I approach
-                    problem-solving and product design.
-                </p>
-            </section>
-
-            <!-- App -->
-            <section>
-                <h2>App</h2>
+            <section class="app-section">
                 <div class="app-card">
                     <div class="app-name-he">אנגלית לפסיכומטרי</div>
                     <div class="app-name-en">English for the Psychometric Exam</div>
                     <p class="app-description">
-                        A vocabulary training app for Israeli students preparing for the English section of the
-                        Psychometric exam. Practice English–Hebrew word pairs and build lasting knowledge through
-                        evidence-based study methods.
+                        A vocabulary learning app for Israeli students preparing for the English section of the Psychometric exam — combining quizzes, flashcards, and spaced repetition to build lasting knowledge.
                     </p>
                     <ul class="app-features">
-                        <li>Vocabulary training with English–Hebrew word pairs</li>
-                        <li>Spaced repetition for long-term retention</li>
+                        <li>Spaced repetition</li>
                         <li>Smart flashcards</li>
                         <li>Progress tracking</li>
-                        <li>Quiz-based and gamified learning</li>
+                        <li>Quiz-based learning</li>
                     </ul>
-                    <p class="app-motivation">
-                        Built to give students a focused, no-nonsense tool for the vocabulary section of the exam.
-                    </p>
                     <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.nemet.trivia" target="_blank" rel="noopener">
                         <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
                     </a>
                 </div>
             </section>
 
-            <!-- Links -->
-            <section>
-                <h2>Links</h2>
-                <ul class="links-list">
-                    <li><a href="https://github.com/aviadnemet" target="_blank" rel="noopener">GitHub</a></li>
-                    <!-- TODO: Add LinkedIn URL when ready -->
-                    <!-- <li><a href="https://www.linkedin.com/in/PLACEHOLDER" target="_blank" rel="noopener">LinkedIn</a></li> -->
-                    <li><a href="https://play.google.com/store/apps/details?id=com.nemet.trivia" target="_blank" rel="noopener">Google Play</a></li>
-                </ul>
-            </section>
-
-            <!-- Contact -->
-            <section class="contact">
-                <h2>Contact</h2>
-                <p><a href="mailto:aviadnemet&#64;gmail&#46;com">aviadnemet<span style="display:none">REMOVE</span>&#64;gmail.com</a></p>
-            </section>
+            <nav class="bottom-bar">
+                <a href="https://github.com/aviadnemet" target="_blank" rel="noopener">GitHub</a>
+                <span class="sep">·</span>
+                <a href="https://play.google.com/store/apps/details?id=com.nemet.trivia" target="_blank" rel="noopener">Google Play</a>
+                <span class="sep">·</span>
+                <!-- TODO: Add LinkedIn URL when ready -->
+                <a href="mailto:aviadnemet&#64;gmail&#46;com">aviadnemet<span style="display:none">REMOVE</span>&#64;gmail.com</a>
+            </nav>
         </main>
 
         <footer>
