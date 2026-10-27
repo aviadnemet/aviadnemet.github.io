@@ -106,54 +106,140 @@
     <div class="container">
         <main>
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last updated: 2026</p>
+            <p class="last-updated">Last updated: October 27, 2026</p>
 
             <p class="intro">
                 This privacy policy applies to Android applications developed and published by Aviad Nemet,
                 including the application <strong>"English for the Psychometric Exam"</strong> ("אנגלית לפסיכומטרי").
+                It explains what information the application collects, why, and who it is shared with.
             </p>
 
-            <h2>Information Collection and Use</h2>
+            <h2>Summary</h2>
+            <ul>
+                <li>The application does not require an account and does not ask for your name, phone number, or precise location.</li>
+                <li>Your study progress is stored on your device.</li>
+                <li>The application uses Google services (Firebase and AdMob) that automatically collect device identifiers, usage and diagnostic data.</li>
+                <li>Information you type into the contact form or a word report (including an optional reply email) is sent to the developer.</li>
+            </ul>
+
+            <h2>Information Stored on Your Device</h2>
             <p>
-                The application itself does not collect, store, or transmit personal information to external servers.
+                Study progress, spaced-repetition data, favorite words, session history, settings, and
+                other preferences are stored locally on your device and are not uploaded by the
+                application. Uninstalling the application or clearing its data removes this information.
             </p>
             <p>
-                Study progress, settings, and other preferences are stored locally on the user's device
-                and remain under the user's control.
+                If you use the backup feature, the backup file is saved to a location you choose and is
+                not uploaded by the application. Daily reminder notifications are scheduled locally on
+                your device.
             </p>
 
-            <h2>Third-Party Services</h2>
+            <h2>Information You Choose to Send</h2>
             <p>
-                The application may use third-party services that may collect certain information
-                automatically in order to operate properly. These services may include:
+                The application sends information to the developer only when you choose to:
             </p>
             <ul>
-                <li>Google Play Services</li>
-                <li>Google AdMob (for displaying advertisements)</li>
+                <li>
+                    <strong>Contact form:</strong> your message, the feedback type, an optional reply email
+                    address, the app version, the Android version, and the device model.
+                </li>
+                <li>
+                    <strong>Word reports:</strong> the reported word, the report type, any text you add,
+                    and the app version.
+                </li>
+                <li>
+                    <strong>Promo codes:</strong> when you redeem a code, the code, the time of redemption,
+                    and the app version, so that each code can only be used once per installation.
+                </li>
             </ul>
             <p>
-                These services may collect device identifiers, usage information, and diagnostic data
-                according to their own privacy policies.
+                This information is stored in Google Cloud Firestore together with an anonymous
+                identifier created by Firebase Authentication. It is used only to respond to you, to
+                fix vocabulary errors, and to validate promo codes. Your email address is used only to
+                reply to your message.
+            </p>
+
+            <h2>Information Collected Automatically</h2>
+            <p>
+                The application uses the following Google services, which collect some information
+                automatically:
+            </p>
+            <ul>
+                <li>
+                    <strong>Google Analytics for Firebase:</strong> app interactions (such as screens
+                    viewed, sessions, and features used), in-app purchase events, app-instance ID,
+                    advertising ID, and approximate location derived from your IP address. Used to
+                    understand how the app is used and to improve it.
+                </li>
+                <li>
+                    <strong>Firebase Crashlytics:</strong> crash logs and diagnostic information (such as
+                    device model, Android version, and app state at the time of a crash). Used to find
+                    and fix bugs.
+                </li>
+                <li>
+                    <strong>Firebase Remote Config, Installations, and Authentication:</strong> a
+                    Firebase installation ID and an anonymous user ID. Used to deliver app settings and
+                    to secure the features described above. No personal account is created.
+                </li>
+                <li>
+                    <strong>Google AdMob:</strong> advertising ID, IP address (used to estimate general
+                    location), app interactions, and diagnostic information. Used for advertising,
+                    analytics, and fraud prevention. See "Advertisements" below.
+                </li>
+            </ul>
+            <p>
+                The application also downloads a public vocabulary-corrections file from Firebase
+                Hosting. This request does not include personal information beyond standard network
+                information such as your IP address.
+            </p>
+            <p>
+                All data sent by the application and these services is encrypted in transit.
+            </p>
+
+            <h2>Sharing of Information</h2>
+            <p>
+                The developer does not sell your personal information. Data collected by Google AdMob
+                (advertising ID, approximate location, app interactions, and diagnostic data) is shared
+                with Google for advertising, analytics, and fraud prevention. Firebase services process
+                data on the developer's behalf as service providers.
             </p>
             <p>
                 For more information about how Google handles data, please review:
                 <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+                and
+                <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>.
             </p>
 
             <h2>Advertisements</h2>
             <p>
-                The application may display advertisements provided by Google AdMob. AdMob may use
-                device identifiers and usage information to display relevant ads.
+                The free version of the application displays advertisements provided by Google AdMob.
+                AdMob may use your advertising ID and usage information to display relevant ads and
+                measure their performance.
             </p>
             <p>
-                Users can manage their ad preferences through their Google account settings.
+                You can reset or delete your advertising ID, or opt out of ads personalization, in your
+                device settings (Settings → Google → Ads, or Settings → Privacy → Ads, depending on your
+                device). Premium users do not see ads, and the advertising SDK is not started for them.
             </p>
 
             <h2>In-App Purchases</h2>
             <p>
                 If you purchase premium features within the application, payment transactions are
                 processed securely by Google Play. The developer does not receive or store payment
-                information such as credit card details.
+                information such as credit card details. Purchase events (such as the product purchased)
+                are recorded by Google Analytics for Firebase.
+            </p>
+
+            <h2>Data Retention and Deletion</h2>
+            <p>
+                Contact messages, word reports, and promo code redemptions are kept for as long as
+                needed to handle them. Analytics and crash data are kept according to the retention
+                settings of the Google services described above.
+            </p>
+            <p>
+                You can request deletion of messages or reports you sent by contacting the developer at
+                the address below. Because the application does not use accounts, please include
+                enough details (for example, the date and the email address you used) to locate them.
             </p>
 
             <h2>Children's Privacy</h2>
